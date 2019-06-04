@@ -14,7 +14,7 @@ def proxy_():
                 for k in sop.find_all("title"):
                     tit=k.string
                     if(tit=="Google"):
-                        valid.write(tit)
+                        valid.write(proxy[:-1])
                         print(proxy[:-1]+"-valid")
                         valid.flush()
             except:
